@@ -22,10 +22,12 @@ class Journal:
         with open(os.path.join(path, file_name), "w") as file:
             file.write('Saved from class.')
             file.writelines('\n' + line for line in self.entries)
+            print(f'Finished writing data into {file.name}.')
 
 
-j = Journal()
-j.add_entry("I flied today.")
-j.add_entry("Today was a chill day.")
-j.add_entry("What a surprise!")
-j.save_to_file(os.getcwd(), "Journal_file.txt")
+if __name__ == "__main__":
+    j = Journal()
+    j.add_entry("I flied today.")
+    j.add_entry("Today was a chill day.")
+    j.add_entry("What a surprise!")
+    j.save_to_file(os.getcwd(), "Journal_file.txt")

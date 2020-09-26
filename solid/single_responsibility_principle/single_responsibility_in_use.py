@@ -27,12 +27,14 @@ class FilesManager:
         with open(os.path.join(path, file_name), "w") as file:
             file.write('Saved from File Manager.')
             file.writelines('\n' + line for line in data)
+            print(f'Finished writing data into {file.name}.')
 
 
-j = Journal()
-j.add_entry("I flied today.")
-j.add_entry("Today was a chill day.")
-j.add_entry("What a surprise!")
+if __name__ == "__main__":
+    j = Journal()
+    j.add_entry("I flied today.")
+    j.add_entry("Today was a chill day.")
+    j.add_entry("What a surprise!")
 
-fm = FilesManager()
-fm.save_to_file(os.getcwd(), "Journal_file.txt", j.entries)
+    fm = FilesManager()
+    fm.save_to_file(os.getcwd(), "Journal_file.txt", j.entries)
