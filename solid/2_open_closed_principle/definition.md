@@ -1,5 +1,5 @@
 ### Opened-Closed Principle 
-**In short:** opened for extension, closed for modification
+**In short:** Class/method should be opened for extension, closed for modification
 
 **[Full Explanation:](https://learning.oreilly.com/library/view/clean-code-in/9781788835831/4e44acb4-51ce-4f65-b94e-08a86e54ef9f.xhtml)**
 
