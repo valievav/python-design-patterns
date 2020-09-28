@@ -1,5 +1,5 @@
 ### Liskov Substitution Principle 
-**In short:** child class should be able to replace parent class w/o any impact to functionality.
+**In short:** child class should be able to replace parent class w/o any impact on functionality.
 
 **[Full Explanation:](https://learning.oreilly.com/library/view/clean-code-in/9781788835831/59d0a137-8f2d-4808-84df-e459e091df98.xhtml)**
 
