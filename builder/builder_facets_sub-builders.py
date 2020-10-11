@@ -72,6 +72,9 @@ class PersonJobBuilder(PersonBuilder):
 # Person Builder -> lives -> PersonAddressBuilder -> fill in certain attributes of a Person class
 #                -> works -> PersonJobBuilder -> fill in certain attributes of a Person class
 
+# designed as a Fluent Interface that encourages method cascading or chaining like so obj.method1().method2().method3()
+# used 'return self' -> return reference to an instance of obj - which then can be used to chain next method!
+
 
 pb = PersonBuilder()
 person = pb.lives.\
