@@ -21,13 +21,14 @@ class Employee:
 
 
 # factory to generate different TYPES of employee
+# stateless - does operations through static methods
 class EmployeeFactory:
-    main_office_employee = Employee('', Address('123 Main Road', 0, 'Green City'))
-    auxiliary_office_employee = Employee('', Address('123 Secondary Road', 0, 'Green City'))
+    main_office_employee = Employee('', Address('123 Main Road', 0, 'Green City'))  # prototype
+    auxiliary_office_employee = Employee('', Address('123 Secondary Road', 0, 'Green City'))  # prototype
 
     @staticmethod
     def __new_employee(prototype, name, suite):
-        employee = copy.deepcopy(prototype)  # prototype
+        employee = copy.deepcopy(prototype)  # prototype deepcopy
         employee.name = name
         employee.address.suite = suite
         return employee
