@@ -13,9 +13,9 @@ class Point:
         return f"1st coordinate: {self.x}, 2nd coordinate: {self.y}"
 
 
-# create separate class with staticmethods for initialization
+# create separate class with methods for initialization
 class PointFactory:
-    @staticmethod
+    @staticmethod  # not necessarily static (if Factory holds some state)
     def new_cartesian_point(x, y):  # x, y explicit naming for cartesian coordinates
         return Point(x, y)
 

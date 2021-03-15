@@ -1,7 +1,20 @@
 from math import cos, sin
 
+#
+# class CoordinateSystem:
+#     CARTESIAN = 1
+#     POLAR = 2
+
 
 class Point:
+    # def __init__(self, a, b, system):
+    #     if system == CoordinateSystem.CARTESIAN:
+    #         self.x = a
+    #         self.y = b
+    #     elif system == CoordinateSystem.POLAR:
+    #         self.x = a * cos(b)
+    #         self.y = b * sin(b)
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
